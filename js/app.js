@@ -1,6 +1,6 @@
 'use strict';
 
-// Introduction 
+// Introduction
 let userName = prompt('what is your name?');
 
 alert(`Welcome to my site ${userName} ! How about we play a guessing game. Please answer with a yes/no or y/n`);
