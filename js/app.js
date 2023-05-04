@@ -62,7 +62,7 @@ questionThree();
 // console.log(questionThree);
 
 //Fourth Question
-// function questionFour() {
+function questionFour() {
   let questionFour = prompt('Fourth Question. Did I play any instruments growing up?').toLowerCase();
 
   if (questionFour === 'y' || questionFour === 'yes') {
@@ -73,9 +73,9 @@ questionThree();
     // console.log(`Sadly, that is incorrect ${userName}. I played several instruments growing up!`);
     alert(`Sadly, that is incorrect ${userName}. I played several instruments growing up!`);
   }
-// }
+}
 
-// questionFour();
+questionFour();
 
 // console.log(questionFour);
 
