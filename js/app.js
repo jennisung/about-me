@@ -108,7 +108,7 @@ const correctAnswer = 6;
 let i = 0;
 
 
-// function questionSix() {
+function questionSix() {
   while (i < 4) {
     i++;
     let questionSix = prompt('Sixth Question: How many countries have I visited? Can you guess it correctly?');
@@ -124,9 +124,9 @@ let i = 0;
   }
 
   alert(`The correct answer is ${correctAnswer}`);
-// }
-// questionSix();
-//End of Question 6 //
+  }
+  questionSix();
+//End of Question 6
 
 
 // Question 7 
