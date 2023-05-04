@@ -102,16 +102,16 @@ alert(`The correct answer is ${correctAnswer}`);
 
 
 // Question 7 
-const possibleAnswers = ['americano', 'affogato', 'espresso'];
-let numCorrectGuesses = 0;
+const myAnswer = ['americano', 'affogato', 'espresso', 'cappuccino', 'latte', 'frappuccino'];
+let correctGuesses = 0;
 
 for (let i = 0; i < 6; i++) {
-  let userGuess = prompt('Seventh Question: Can you name two of my favorite type of coffee? It will be from these 6 options: americano, espresso, latte, cappuccino, frappuccino, affogato').toLowerCase();
+  let userGuess = prompt('Seventh Question: Can you name some of my favorite type of coffee?').toLowerCase();
 
   let isCorrectGuess = false;
 
-  for (let j = 0; j < possibleAnswers.length; j++) {
-    if (userGuess === possibleAnswers[j]) {
+  for (let j = 0; j < myAnswer.length; j++) {
+    if (userGuess === myAnswer[j]) {
       isCorrectGuess = true;
       break;
     }
@@ -119,17 +119,17 @@ for (let i = 0; i < 6; i++) {
 
   if (isCorrectGuess) {
     alert('Bingo!');
-    numCorrectGuesses++;
+    correctGuesses++;
   } else {
     alert('Sorry, that is wrong.');
   }
 
-  if (numCorrectGuesses === possibleAnswers.length) {
+  if (correctGuesses === myAnswer.length) {
     break;
   }
 }
 
-alert(`You guessed ${numCorrectGuesses} correct out of 6 times.`);
+alert(`You guessed ${correctGuesses} correct out of 6 times. My favorite is ${myAnswer[0]}, ${myAnswer[1]}, ${myAnswer[2]}, ${myAnswer[3]}, ${myAnswer[4]}, ${myAnswer[5]}`);
 
 alert(`Thank you for playing ${userName}! Now welcome to my site!`);
 
