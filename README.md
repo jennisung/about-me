@@ -8,6 +8,8 @@
 I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
 
 ### Author: Jennifer
+I was Navigator on:  https://github.com/AlexSaeChao/about-me-1.git
+I was Driver on: https://github.com/jennisung/about-me-1.git
 
 ### Links and Resources
 
