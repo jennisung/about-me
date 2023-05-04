@@ -133,7 +133,7 @@ function questionSix() {
 const myAnswer = ['americano', 'affogato', 'espresso', 'cappuccino', 'latte', 'frappuccino'];
 let correctGuesses = 0;
 
-// function questionSeven() {
+function questionSeven() {
   for (let i = 0; i < 6; i++) {
     let userGuess = prompt('Seventh Question: Can you name some of my favorite type of coffee?').toLowerCase();
 
@@ -149,6 +149,7 @@ let correctGuesses = 0;
     if (isCorrectGuess) {
       alert('Bingo!');
       correctGuesses++;
+      break;
     } else {
       alert('Sorry, that is wrong.');
     }
@@ -158,9 +159,9 @@ let correctGuesses = 0;
     }
   }
   alert(`${userName} guessed ${correctGuesses} right answer. By the way, my favorite coffee is ${myAnswer}. And you got ${correctCount} out of 7 correct overall`);
-// }
+}
 
-// questionSeven();
+questionSeven();
 
 
 
