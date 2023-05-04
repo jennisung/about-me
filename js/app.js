@@ -139,8 +139,34 @@ for (let i = 0; i < 6; i++) {
 }
 
 
-alert(`${userName} guessed ${correctGuesses} right answer. By the way, my favorite coffee is ${myAnswer[0]}, ${myAnswer[1]}, ${myAnswer[2]}, ${myAnswer[3]}, ${myAnswer[4]}, ${myAnswer[5]}. And you got ${correctCount} out of 7 correct overall`);
+alert(`${userName} guessed ${correctGuesses} right answer. By the way, my favorite coffee is ${myAnswer}. And you got ${correctCount} out of 7 correct overall`);
 
 
+
+
+
+//Scrape code:
+
+// //Question 6
+// const correctAnswer = 6;
+// let i = 0;
+
+// while (i < 4) {
+//   i++;
+//   let questionSix = prompt('Sixth Question: How many countries have I visited? Can you guess it correctly?');
+//   if ( questionSix > correctAnswer) {
+//     alert('Too high! Think lower.');
+//   } else if (questionSix < correctAnswer) {
+//     alert('Too low! Think higher.');
+//   } else {
+//     alert('Bingo! ding ding ding!');
+//     correctCount++;
+//     break;
+//   }
+// }
+
+// alert(`The correct answer is ${correctAnswer}`);
+
+// //End of Question 6 //
 
 
