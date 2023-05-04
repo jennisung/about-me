@@ -28,7 +28,7 @@ questionOne();
 // console.log(questionOne);
 
 //Second Question
-function questionTwo() {
+// function questionTwo() {
   let questionTwo = prompt('Second Question. Am I located in the east coast?').toLowerCase();
 
   if (questionTwo === 'y' || questionTwo === 'yes') {
@@ -39,13 +39,13 @@ function questionTwo() {
     //console.log(`Sorry ${userName} that is not correct, I live in the east coast.`)
     alert(`Sorry ${userName} that is not correct, I live in the east coast.`);
   }
-}
+// }
 
-questionTwo();
+// questionTwo();
 // console.log(questionTwo);
 
 //Third Question
-function questionThree() {
+// function questionThree() {
   let questionThree = prompt('Third Question. Do I enjoy spicy food?').toLowerCase();
 
   if (questionThree === 'y' || questionThree === 'yes') {
@@ -56,13 +56,13 @@ function questionThree() {
     // console.log(`Sadly, that is incorrect ${userName}. I need spice in my life!`);
     alert(`Sadly, that is incorrect ${userName}. I need spice in my life!`);
   }
-}
+// }
 
-questionThree();
+// questionThree();
 // console.log(questionThree);
 
 //Fourth Question
-function questionFour() {
+// function questionFour() {
   let questionFour = prompt('Fourth Question. Did I play any instruments growing up?').toLowerCase();
 
   if (questionFour === 'y' || questionFour === 'yes') {
@@ -73,14 +73,14 @@ function questionFour() {
     // console.log(`Sadly, that is incorrect ${userName}. I played several instruments growing up!`);
     alert(`Sadly, that is incorrect ${userName}. I played several instruments growing up!`);
   }
-}
+// }
 
-questionFour();
+// questionFour();
 
 // console.log(questionFour);
 
 //Fifth Question 
-function questionFive() {
+// function questionFive() {
   let questionFive = prompt('Fifth Question! Do I have any siblings?').toLowerCase();
 
   if (questionFive === 'y' || questionFive === 'yes') {
@@ -91,9 +91,9 @@ function questionFive() {
     //console.log(`Sadly, that is incorrect ${userName}. I have one older sibling.`);
     alert(`Sadly, that is incorrect ${userName}.`);
   }
-}
+// }
 
-questionFive();
+// questionFive();
 // console.log(questionFive);
 
 
@@ -108,7 +108,7 @@ const correctAnswer = 6;
 let i = 0;
 
 
-function questionSix() {
+// function questionSix() {
   while (i < 4) {
     i++;
     let questionSix = prompt('Sixth Question: How many countries have I visited? Can you guess it correctly?');
@@ -124,8 +124,8 @@ function questionSix() {
   }
 
   alert(`The correct answer is ${correctAnswer}`);
-}
-questionSix();
+// }
+// questionSix();
 //End of Question 6 //
 
 
@@ -133,7 +133,7 @@ questionSix();
 const myAnswer = ['americano', 'affogato', 'espresso', 'cappuccino', 'latte', 'frappuccino'];
 let correctGuesses = 0;
 
-function questionSeven() {
+// function questionSeven() {
   for (let i = 0; i < 6; i++) {
     let userGuess = prompt('Seventh Question: Can you name some of my favorite type of coffee?').toLowerCase();
 
@@ -160,7 +160,7 @@ function questionSeven() {
   alert(`${userName} guessed ${correctGuesses} right answer. By the way, my favorite coffee is ${myAnswer}. And you got ${correctCount} out of 7 correct overall`);
 }
 
-questionSeven();
+// questionSeven();
 
 
 
