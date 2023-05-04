@@ -145,28 +145,6 @@ alert(`${userName} guessed ${correctGuesses} right answer. By the way, my favori
 
 
 
-//Scrape code:
 
-// //Question 6
-// const correctAnswer = 6;
-// let i = 0;
-
-// while (i < 4) {
-//   i++;
-//   let questionSix = prompt('Sixth Question: How many countries have I visited? Can you guess it correctly?');
-//   if ( questionSix > correctAnswer) {
-//     alert('Too high! Think lower.');
-//   } else if (questionSix < correctAnswer) {
-//     alert('Too low! Think higher.');
-//   } else {
-//     alert('Bingo! ding ding ding!');
-//     correctCount++;
-//     break;
-//   }
-// }
-
-// alert(`The correct answer is ${correctAnswer}`);
-
-// //End of Question 6 //
 
 
