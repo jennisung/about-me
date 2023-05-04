@@ -1,12 +1,14 @@
 'use strict';
 
+
+//LAB 02: prompt/alerts
 // Introduction
 let userName = prompt('what is your name?');
 
 alert(`Welcome to my site ${userName} ! How about we play a guessing game. Please answer with a yes/no or y/n`);
 
 //First Question
-let questionOne = prompt('First Question. Did I got to college?').toLocaleLowerCase();
+let questionOne = prompt('First Question. Did I got to college?').toLowerCase();
 
 if(questionOne === 'y' || questionOne === 'yes') {
   //console.log(`Correct ${userName}! I did. I recently graduated.`);
@@ -18,9 +20,8 @@ if(questionOne === 'y' || questionOne === 'yes') {
 
 // console.log(questionOne);
 
-
 //Second Question
-let questionTwo = prompt('Second Question. Am I located in the east coast?').toLocaleLowerCase();
+let questionTwo = prompt('Second Question. Am I located in the east coast?').toLowerCase();
 
 if(questionTwo === 'y' || questionTwo === 'yes') {
   //console.log(`Great guess ${userName}! Yes, I live in NYC.`);
@@ -33,7 +34,7 @@ if(questionTwo === 'y' || questionTwo === 'yes') {
 // console.log(questionTwo);
 
 //Third Question
-let questionThree = prompt('Third Question. Do I enjoy spicy food?').toLocaleLowerCase();
+let questionThree = prompt('Third Question. Do I enjoy spicy food?').toLowerCase();
 
 if(questionThree === 'y' || questionThree === 'yes') {
   //console.log(`Yes! I love spicy food. Awesome guess ${userName}`);
@@ -46,7 +47,7 @@ if(questionThree === 'y' || questionThree === 'yes') {
 // console.log(questionThree);
 
 //Fourth Question
-let questionFour = prompt('Fourth Question. Did I play any instruments growing up?').toLocaleLowerCase();
+let questionFour = prompt('Fourth Question. Did I play any instruments growing up?').toLowerCase();
 
 if(questionFour === 'y' || questionFour === 'yes') {
   //console.log(`Yes! Great guess ${userName}. I played the piano, saxophone, and the recorder growing up.`);
@@ -59,20 +60,78 @@ if(questionFour === 'y' || questionFour === 'yes') {
 // console.log(questionFour);
 
 //Fifth Question 
-let questionFive = prompt('Final Question! Do I have any siblings?').toLocaleLowerCase();
+let questionFive = prompt('Fifth Question! Do I have any siblings?').toLowerCase();
 
 if(questionFive === 'y' || questionFive === 'yes') {
-  //console.log(`You are great at this guessing game ${userName}! I have one older brother. Thank you so much for answering these 5 questions, now welcome to my page!`);
-  alert(`You are great at this guessing game ${userName}! I have one older brother. Thank you so much for answering these 5 questions, now welcome to my page!`);
+  //console.log(`You are great at this guessing game ${userName}! I have one older brother.`);
+  alert(`You are great at this guessing game ${userName}! I have one older brother`);
 } else if (questionFive === 'n' || questionFive === 'no') {
-  //console.log(`Sadly, that is incorrect ${userName}. I have one older sibling. Thank you so much for answering these 5 questions, now welcome to my page!`);
-  alert(`Sadly, that is incorrect ${userName}. I have one older sibling. Thank you so much for answering these 5 questions, now welcome to my page!`);
+  //console.log(`Sadly, that is incorrect ${userName}. I have one older sibling.`);
+  alert(`Sadly, that is incorrect ${userName}.`);
 }
 
 // console.log(questionFive);
 
 
 
+//LAB 03: Loops
+
+let roundTwo = alert('Now for round two of this guessing game. Get Ready...');
+
+
+//Question 6
+const correctAnswer = 6;
+let i = 0;
+
+while (i < 4) {
+  i++;
+  let questionSix = prompt('Sixth Question: How many countries have I visited? Can you guess it correctly?');
+  if ( questionSix > correctAnswer) {
+    alert('Too high! Think lower.');
+  } else if (questionSix < correctAnswer) {
+    alert('Too low! Think higher.');
+  } else {
+    alert('Bingo! ding ding ding!');
+    break;
+  }
+}
+
+alert(`The correct answer is ${correctAnswer}`);
+
+//End of Question 6 //
+
+
+// Question 7 
+const possibleAnswers = ['americano', 'affogato', 'espresso'];
+let numCorrectGuesses = 0;
+
+for (let i = 0; i < 6; i++) {
+  let userGuess = prompt('Seventh Question: Can you name two of my favorite type of coffee? It will be from these 6 options: americano, espresso, latte, cappuccino, frappuccino, affogato').toLowerCase();
+
+  let isCorrectGuess = false;
+
+  for (let j = 0; j < possibleAnswers.length; j++) {
+    if (userGuess === possibleAnswers[j]) {
+      isCorrectGuess = true;
+      break;
+    }
+  }
+
+  if (isCorrectGuess) {
+    alert('Bingo!');
+    numCorrectGuesses++;
+  } else {
+    alert('Sorry, that is wrong.');
+  }
+
+  if (numCorrectGuesses === possibleAnswers.length) {
+    break;
+  }
+}
+
+alert(`You guessed ${numCorrectGuesses} correct out of 6 times.`);
+
+alert(`Thank you for playing ${userName}! Now welcome to my site!`);
 
 
 

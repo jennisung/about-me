@@ -3,20 +3,58 @@ body {
 background-color: #f2f2f2;
 }
 
-h1 {
+#about-me {
     font-size: 40px;
     color: black;
     margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
-p {
+#bio-paragraph {
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
 
+}
+
+
+#ten-things {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#education {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#work-history {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#list-things {
+    text-align:center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 img {
@@ -33,5 +71,24 @@ footer {
 margin-top: 50px;
 
 }
+
+ul, ol {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+ol {
+    list-style: -moz-arabic-indic;
+    margin-left: padding-left;
+    list-style-position: inside;
+}
+
+
+
+
 
 
