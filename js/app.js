@@ -1,6 +1,5 @@
 'use strict';
 
-
 //LAB 02: prompt/alerts
 // Introduction
 let userName = prompt('what is your name?');
