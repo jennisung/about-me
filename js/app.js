@@ -80,7 +80,7 @@ questionFour();
 // console.log(questionFour);
 
 //Fifth Question 
-// function questionFive() {
+function questionFive() {
   let questionFive = prompt('Fifth Question! Do I have any siblings?').toLowerCase();
 
   if (questionFive === 'y' || questionFive === 'yes') {
@@ -91,9 +91,9 @@ questionFour();
     //console.log(`Sadly, that is incorrect ${userName}. I have one older sibling.`);
     alert(`Sadly, that is incorrect ${userName}.`);
   }
-// }
+}
 
-// questionFive();
+questionFive();
 // console.log(questionFive);
 
 
