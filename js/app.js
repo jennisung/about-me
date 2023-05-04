@@ -124,9 +124,9 @@ function questionSix() {
   }
 
   alert(`The correct answer is ${correctAnswer}`);
-}
-questionSix();
-//End of Question 6 //
+  }
+  questionSix();
+//End of Question 6
 
 
 // Question 7 
@@ -149,6 +149,7 @@ function questionSeven() {
     if (isCorrectGuess) {
       alert('Bingo!');
       correctGuesses++;
+      break;
     } else {
       alert('Sorry, that is wrong.');
     }
