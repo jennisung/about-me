@@ -139,7 +139,7 @@ for (let i = 0; i < 6; i++) {
 }
 
 
-alert(`${userName} guessed ${correctGuesses} correct out of 6 times for question 7. By the way, my favorite coffee is ${myAnswer[0]}, ${myAnswer[1]}, ${myAnswer[2]}, ${myAnswer[3]}, ${myAnswer[4]}, ${myAnswer[5]}. And you got ${correctCount} out of 7 correct overall`);
+alert(`${userName} guessed ${correctGuesses} right answer. By the way, my favorite coffee is ${myAnswer[0]}, ${myAnswer[1]}, ${myAnswer[2]}, ${myAnswer[3]}, ${myAnswer[4]}, ${myAnswer[5]}. And you got ${correctCount} out of 7 correct overall`);
 
 
 
