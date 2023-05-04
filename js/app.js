@@ -28,7 +28,7 @@ questionOne();
 // console.log(questionOne);
 
 //Second Question
-// function questionTwo() {
+function questionTwo() {
   let questionTwo = prompt('Second Question. Am I located in the east coast?').toLowerCase();
 
   if (questionTwo === 'y' || questionTwo === 'yes') {
@@ -39,9 +39,9 @@ questionOne();
     //console.log(`Sorry ${userName} that is not correct, I live in the east coast.`)
     alert(`Sorry ${userName} that is not correct, I live in the east coast.`);
   }
-// }
+}
 
-// questionTwo();
+questionTwo();
 // console.log(questionTwo);
 
 //Third Question
@@ -158,7 +158,7 @@ let correctGuesses = 0;
     }
   }
   alert(`${userName} guessed ${correctGuesses} right answer. By the way, my favorite coffee is ${myAnswer}. And you got ${correctCount} out of 7 correct overall`);
-}
+// }
 
 // questionSeven();
 
