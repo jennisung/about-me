@@ -45,7 +45,7 @@ questionTwo();
 // console.log(questionTwo);
 
 //Third Question
-// function questionThree() {
+function questionThree() {
   let questionThree = prompt('Third Question. Do I enjoy spicy food?').toLowerCase();
 
   if (questionThree === 'y' || questionThree === 'yes') {
@@ -56,9 +56,9 @@ questionTwo();
     // console.log(`Sadly, that is incorrect ${userName}. I need spice in my life!`);
     alert(`Sadly, that is incorrect ${userName}. I need spice in my life!`);
   }
-// }
+}
 
-// questionThree();
+questionThree();
 // console.log(questionThree);
 
 //Fourth Question
