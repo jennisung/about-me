@@ -8,99 +8,89 @@ alert(`Welcome to my site ${userName} ! How about we play a guessing game. Pleas
 
 let correctCount = 0;
 
-
 //First Question
 function questionOne() {
   let questionOne = prompt('First Question. Did I got to college?').toLowerCase();
 
   if (questionOne === 'y' || questionOne === 'yes') {
-    //console.log(`Correct ${userName}! I did. I recently graduated.`);
     alert(`Correct ${userName}! I did. I recently graduated.`);
     correctCount++;
   } else if (questionOne === 'n' || questionOne === 'no') {
-    //console.log(`Sorry ${userName} that is not correct, I have a college degree.`);
     alert(`Sorry ${userName} that is not correct, I have a college degree.`);
+  } else {
+    alert('Input a yes/no or y/n');
   }
 }
 
 questionOne();
 
-// console.log(questionOne);
 
 //Second Question
 function questionTwo() {
   let questionTwo = prompt('Second Question. Am I located in the east coast?').toLowerCase();
 
   if (questionTwo === 'y' || questionTwo === 'yes') {
-    //console.log(`Great guess ${userName}! Yes, I live in NYC.`);
     alert(`Great guess ${userName}! Yes, I live in NYC.`);
     correctCount++;
   } else if (questionTwo === 'n' || questionTwo === 'no') {
-    //console.log(`Sorry ${userName} that is not correct, I live in the east coast.`)
     alert(`Sorry ${userName} that is not correct, I live in the east coast.`);
+  } else {
+    alert('Input a yes/no or y/n');
   }
 }
 
 questionTwo();
-// console.log(questionTwo);
 
 //Third Question
 function questionThree() {
   let questionThree = prompt('Third Question. Do I enjoy spicy food?').toLowerCase();
 
   if (questionThree === 'y' || questionThree === 'yes') {
-    //console.log(`Yes! I love spicy food. Awesome guess ${userName}`);
     alert(`Yes! I love spicy food. Awesome guess ${userName}`);
     correctCount++;
   } else if (questionThree === 'n' || questionThree === 'no') {
-    // console.log(`Sadly, that is incorrect ${userName}. I need spice in my life!`);
     alert(`Sadly, that is incorrect ${userName}. I need spice in my life!`);
+  } else {
+    alert('Input a yes/no or y/n');
   }
 }
 
 questionThree();
-// console.log(questionThree);
 
 //Fourth Question
 function questionFour() {
   let questionFour = prompt('Fourth Question. Did I play any instruments growing up?').toLowerCase();
 
   if (questionFour === 'y' || questionFour === 'yes') {
-    //console.log(`Yes! Great guess ${userName}. I played the piano, saxophone, and the recorder growing up.`);
     alert(`Yes! Great guess ${userName}. I played the piano, saxophone, and the recorder growing up.`);
     correctCount++;
   } else if (questionFour === 'n' || questionFour === 'no') {
-    // console.log(`Sadly, that is incorrect ${userName}. I played several instruments growing up!`);
     alert(`Sadly, that is incorrect ${userName}. I played several instruments growing up!`);
+  } else {
+    alert('Input a yes/no or y/n');
   }
 }
 
 questionFour();
-
-// console.log(questionFour);
 
 //Fifth Question 
 function questionFive() {
   let questionFive = prompt('Fifth Question! Do I have any siblings?').toLowerCase();
 
   if (questionFive === 'y' || questionFive === 'yes') {
-    //console.log(`You are great at this guessing game ${userName}! I have one older brother.`);
     alert(`You are great at this guessing game ${userName}! I have one older brother`);
     correctCount++;
   } else if (questionFive === 'n' || questionFive === 'no') {
-    //console.log(`Sadly, that is incorrect ${userName}. I have one older sibling.`);
     alert(`Sadly, that is incorrect ${userName}.`);
+  } else {
+    alert('Input a yes/no or y/n');
   }
 }
 
 questionFive();
-// console.log(questionFive);
-
 
 
 //LAB 03: Loops
-
-let roundTwo = alert('Now for round two of this guessing game. Get Ready...');
 
 
 //Question 6
@@ -124,9 +114,8 @@ function questionSix() {
   }
 
   alert(`The correct answer is ${correctAnswer}`);
-  }
-  questionSix();
-//End of Question 6
+}
+questionSix();
 
 
 // Question 7 

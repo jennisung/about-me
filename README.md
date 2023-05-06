@@ -13,8 +13,8 @@ I was Driver on: https://github.com/AlexSaeChao/about-me/pull/2
 
 ### Links and Resources
 
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
+* [ChatGBT](https://chat.openai.com/) : I consulted chatgbt to code help code question 6 and 7. 
+
 
 ### Lighthouse Accessibility Report Score
 
